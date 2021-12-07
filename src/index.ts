@@ -29,7 +29,7 @@ async function run(): Promise<void> {
         return `${map[0]} ${map[1]}`;
       }
 
-      return `${map[0]} 'true'`;
+      return `${map[0]} true`;
     });
 
     const existsRobotConfig = await fs.pathExists(path.join(sourceDir, '.mini-program-robot.js'))
